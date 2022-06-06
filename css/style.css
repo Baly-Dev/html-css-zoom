@@ -29,6 +29,10 @@ body{
     justify-content: flex-end;
 }
 
+.jc-between{
+    justify-content: space-between;
+}
+
 .al-center{
     align-items: center;
 }
@@ -41,9 +45,41 @@ body{
     gap: 10px;
 }
 
-.btn{
-    cursor: pointer;
+.d-none{
+    display: none;
 }
+
+button.btn{
+    cursor: pointer;
+    border: 1px solid rgba(75,74,74,0.4);
+    background-color: rgba(75,74,74, 0.8);
+    color: #fff;
+    border-radius: 8px;
+}
+
+button.btn-small{
+    min-height: 25px;
+    padding: 0px 10px;
+}
+
+button.btn-large{
+    min-height: 50px;
+    padding: 8px 15px;
+}
+
+button.btn i{
+    vertical-align: middle;
+}
+
+.green{
+    color: greenyellow;
+}
+
+.red{
+    color: red;
+    font-weight: 600;
+}
+
 
 /* header */
 header{
@@ -52,24 +88,39 @@ header{
     color: #fff;
 }
 
-header button.btn-header{
-    min-height: 25px;
-    padding: 4px 10px;
-    border-radius: 8px;
-    border: 1px solid rgba(75,74,74,0.4);
-    background-color: rgba(75,74,74, 0.8);
-    color: #fff;
-}
-
-header button.btn-header:hover{
+button.btn:hover{
     border: 1px solid rgba(75,74,74,0.8);
     background-color: rgba(75,74,74, 1);
 }
 
-header button.btn-header .ri-grid-fill{
+header button.btn .ri-grid-fill{
     margin-right: 5px;
 }
 
-header button.btn-header .ri-split-cells-horizontal{
+header button.btn .ri-split-cells-horizontal{
     font-size: 18px;
+}
+
+
+/* main */
+main{
+    background-color: red;
+    height: calc(100vh - 125px);
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: 75px;
+    background-color: #262626;
+}
+
+footer button.btn-large i{
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+footer .ri-arrow-drop-up-line{
+    color: #fff;
+    font-size: 20px;
 }
